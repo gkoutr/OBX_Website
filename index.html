@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head lang = "en">
+	<meta charset= "utf-8">
+	<meta name = "viewport" content = "width=device-width" />
+    
+	<title>Outer Banks, North Carolina</title>
+	<style>
+	
+		#list a:link{
+		text-decoration: underline;
+		color: black;
+		}
+		
+		#list a:visited{
+			text-decoration: underline;
+			color:purple;
+		}
+		
+		#list a:hover{
+		text-decoration: none;
+		font-weight:bold;
+		}
+		
+		#list a:active{
+		background-color:yellow;
+		}
+		
+	</style>
+	
+	
+	<link rel = "stylesheet" href = "Assignments/COSC 484 Assignment 3/css/mobile.css" media = "screen and (max-width:480px)" />
+	<link rel = "stylesheet" href = "Assignments/COSC 484 Assignment 3/css/style.css" />
+    <script type = "text/JavaScript" src = "Assignments/COSC 484 Assignment 3/javascript/checkform.js"/>
+    </script>
+</head>
+<body>
+<div id="body">
+<header>
+<div id = "header">
+<h1>Find Your Beach</h1>
+<h2>Outer Banks, North Carolina</h2>
+</div>
+<div id = "main">
+
+	
+	
+	<div id = "content-1">
+	<nav id = "list">
+		<ul>
+		
+			<li><a href = "#Home">Home</a></li>
+			<li><a href = "#towns">Towns</a></li>
+			<ol>
+				<li><a href = "#duck">Duck</a></li>
+				<li><a href = "#kittyhawk">Kitty Hawk</a></li>
+				<li><a href = "#nagshead">Nags Head</a></li>
+				<li><a href = "#avon">Avon</a></li>
+			</ol>
+			<li><a href = "#tour">Video Tour</a></li>
+			<li><a href = "#info">About</a></li>
+			<li><a href = "#css">CSS</a><li>
+		</ul>
+	</nav>
+	</div>
+</header>
+<article>
+<div id = "content-2">
+	<div id = "content-2-1">
+	<section id= "form">
+		<h3>Account Signup Form</h3>
+		<p>Sign up for an account and join our emailing list to receive information on events, rentals, new restaurants, and many more!</p>
+		<form method="get" action=" " id = "mainForm" onsubmit="return validate();">
+			<fieldset>
+				<legend>Details</legend>
+				<p>
+				  <label>Enter a Username: </label>
+				  <input type = "text" name = "username" id="username" class="required" />
+				</p>
+				<p>
+					<label>Enter a password: </label>
+					<input type = "password" name = "password" id = "password" class="required"/>
+				</p>
+				<p>
+					<label>Enter your email: </label>
+					<input type = "email" name = "email" id = "email" class="required" />
+				</p>	
+				<p>
+					<label>Date of Birth:</label>
+					<input type = "datetime" name = "dob" id = "dob" class="required" />
+				</p>
+				<p><label>State currently living:</label>
+					<select name = "where" id="where" />
+					<option>Choose a country</option>
+					<option>Alabama</option>
+					<option>Alaska</option>
+					<option>Arizona</option>
+					<option>Arkansas</option>
+					<option>California</option>
+					<option>Colorado</option>
+					<option>Connecticut</option>
+					<option>Delaware</option>
+					<optione>District of Columbia</option>
+					<option>Florida</option>
+					<option>Georgia</option>
+					<option>Hawaii</option>
+					<option>Idaho</option>
+					<option>Illinois</option>
+					<option>Indiana</option>
+					<option>Iowa</option>
+					<option>Kansas</option>
+					<option>Kentucky</option>
+					<option>Lousiana</option>
+					<option>Maine</option>
+					<option>Maryland</option>
+					<option>Massachusetts</option>
+					<option>Michigan</option>
+					<option>Minnesota</option>
+					<option>Mississippi</option>
+					<option>Missouri</option>
+					<option>Montana</option>
+					<option>Nebraska</option>
+					<option>Nevada</option>
+					<option>New Hampshire</option>
+					<option>New Jersey</option>
+					<option>New Mexico</option>
+					<option>New York</option>
+					<option>North Carolina</option>
+					<option>North Carolina</option>
+					<option>Ohio</option>
+					<option>Oklahoma</option>
+					<option>Oregon</option>
+					<option>Pennsylvania</option>
+					<option>Rhode Island</option>
+					<option>South Carolina</option>
+					<option>South Dakota</option>
+					<option>Tennessee</option>
+					<option>Texas</option>
+					<option>Utah</option>
+					<option>Vermont</option>
+					<option>Virginia</option>
+					<option>Washington</option>
+					<option>West Virginia</option>
+					<option>Wisconsin</option>
+					<option>Wyoming</option>
+					<option>Wisconsin</option>
+					<option>Wyoming</option>
+					</select>
+				<p>
+					<label>Optional:Enter a phone number</label>
+					<input type = "tel" name = "phone" class="required"/>
+				</p>
+				<p> 
+				<label>Are you currently a resident in the Outer banks? </label>
+				<br>
+					<input type = "radio" name ="resident" id = "residentYes"value="yes">yes<br>
+					<input type = "radio" name = "resident" id="residentNo" value = "no">no<br>
+				</p>
+				<p>
+					<label>Which email information would you like to recieve? </label><br>
+					<input type = "checkbox" name = "event" onclick="alert('Event Clicked!')">Events<br>
+					<input type = "checkbox" name = "rental">House Rentals<br>
+					<input type = "checkbox" name = "food">Restaurant Information<br>
+					<input type = "checkbox" name = "beach">Beach Info<br>
+					<input type = "checkbox" name =  "pictures">Pictures of OBX!<br>
+				</p>
+				<p>
+				  <label>Enter a optional review of your visit to the Outer Banks</label><br>
+				  <textarea rows ="4" cols="50">
+				  </textarea>
+				</p>
+			<input type = "submit" class="rounded" />
+			<input type = "reset" />
+					
+			</fieldset>
+	</div>
+	</section>
+	<div id = "content-2-2">
+	<section id = "Towns">
+		<h3>Towns</h3>
+		<p>The Outer Banks runs from north to south with many towns and beaches.</p>
+		<p>Here are photos of some of the towns in order from north to south</p>
+		<div id = "Group1">
+			<h4 id ="duck">Duck</h4>
+				<figure>
+				 <a href = "Assignments/COSC 484 Assignment 3/images/duck.png"><img src= "Assignments/COSC 484 Assignment 3/images/small/duck-small.jpg" alt = "Waterfront shops in Duck"/></a>
+				 <figcaption>Waterfront shops in Duck, North Carolina</figcaption>
+				</figure>
+			<h4 id = "kittyhawk">Kitty Hawk</h4>
+				<figure>
+				 <a href = "Assignments/COSC 484 Assignment 3/images/kitty-hawk-large.jpg"><img src = "Assignments/COSC 484 Assignment 3/images/small/kitty-hawk-small.jpg" alt= "Kitty Hawk Pier" title="kitty hawk pier"/></a>
+				 <figcaption>Kitty Hawk Pier</figcaption>
+				</figure>
+		</div>
+		<div id = "Group2">
+			<h4 id = "nagshead">Nags Head</h4>
+				<figure>
+				<a href = "Assignments/COSC 484 Assignment 3/images/nagshead.jpg"><img src = "Assignments/COSC 484 Assignment 3/images/small/nagshead-small.jpg" alt= "Nags Head Beach" title="Nags Head Beach"/></a>
+				<figcaption>Nags Head Beach</figcaption>
+				</figure>
+			<h4 id = "avon">Avon</h4>
+				<figure>
+				<a href = "Assignments/COSC 484 Assignment 3/images/avon.jpg"><img src = "Assignments/COSC 484 Assignment 3/images/small/avon-small.jpg" alt = "Neighborhood in Avon " title = "Neighborhood in Avon"/></a>
+				<figcaption>Neighborhood in Avon</figcaption>
+				</figure>
+		</div>
+	</section>
+	<section>
+	
+		<div id = "tour">
+			<h3>Video Tour</h3>
+			<h5>Drone tour through the Outer Banks Beaches</h5>
+			
+			<video width="250" controls>
+				<source src="Assignments/COSC 484 Assignment 3/video/Drone-HD.mp4" type = "video/mp4">	
+			</video>
+		
+		</div>
+		
+	</section>
+	<section>
+		<h3 id = "info"> About</h3>
+		<div class = "selector">
+			<aside>
+				<p>The Outer Banks is a great vacation spot for all ages! There are plenty of things to do that includes
+				beaches, fine dining, shopping, fishing, golfing, surfing, and much more!
+				On this site, enjoy some pictures and video tour of the beaches of the Outer Banks!
+				More information will be updated ASAP!</p>
+				<h6 style = "font-size:12pt;font-weight:bold">Visit the 
+				<a href = "http://www.outerbanks.com/">Outer Banks Visitors Guide</a> to find out more!</h6>
+			</aside>
+		</div>
+	</div>	
+	</section>
+	<section class = "selector">
+		<h3 id = "css"> CSS Code</h3>
+		<a href = "Assignments/COSC 484 Assignment 3/css/style.css">Click this link to see the CSS code for this site!</a>
+        </br>
+        <a href = "Assignments/COSC%20484%20Assignment%203/css/mobile.css">Mobile CSS Link</a>
+        <h3 id = "js"> JavaScript Code</h3>
+        <a href = "Assignments/COSC 484 Assignment 3/javascript/checkform.js">JS File</a>
+	</section>
+</div>
+		<hr/>
+</article>
+<footer id = "footer">
+	<p><em>Copyright &copy; 2016 Find Your Beach</em></p>
+</footer>
+</body>
+
+		
+</html>

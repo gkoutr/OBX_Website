@@ -1,0 +1,173 @@
+html{
+	background-color: grey;
+}
+html, body{
+	margin: 0px;
+	padding:0px;
+	border: 0px;
+	background: #fff;
+}
+
+header{
+    background-color:;
+}
+
+
+ 
+
+
+
+
+/*
+body{
+	background-color:#4dffff;
+	margin: 5px 50px;
+	padding: 5px 20px;
+	
+	
+}
+
+header{
+	color: yellow;
+	/*The header is Yellow which should turn the h1 & h2 tags and the nnumbers in the ordered list yellow
+	I have also set the h2 tag to orange, and the ordered list color to black. 
+	the Descendants which in this case would be h2 and ol. both of these tags overrided the header{color:yellow}
+	*/
+}
+h1{
+	font-family: "Arial Black", Gadget, sans-serif;
+	text-align:left;
+	font-style: normal;
+	
+}
+
+h2{
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	
+}
+
+header ul ol li{
+	color: black;
+}
+
+header, header nav{
+/*	border-style: dashed;
+	border-color: yellow;
+	*/
+}
+figure img{
+	width:200px;
+	float:left;
+	padding:5px;
+	margin:0 5px;
+	
+}
+figure figcaption{
+	
+	width: 200px;
+	float:left;
+	text-align:center;
+	
+}
+
+figcaption{
+	background-color:black;
+	
+	color: white;
+	opacity: 0.6;
+	width: 140px;
+	height: 30px;
+	padding: 5px;
+	top: 30px;
+	left:50px;
+	
+}
+figure{
+	border: 1pt solid black;
+	background-color: grey;
+	padding:5px;
+	width: 250px;
+	margin: 10px;
+	overflow: auto;
+	
+}
+article{
+	
+}
+footer{
+	color: white;
+	
+	margin: 0em 4em 0.5em 4em;
+	padding: 0.5em 1em 0.5em 0.5
+}
+
+/*class selectors*/
+
+.selector{
+	font-family:Arial;
+	padding:5 5 5 5;
+	clear:both;
+}
+
+.selector p{
+	background-color: yellow;
+	border-style: solid ;
+	border-color:;
+	margin: 0 100px 0 5px;
+	padding:5px 5px 5px5px;
+}
+
+
+/*id selectors*/
+
+#body{
+	width: 1080px;
+	margin: 0 auto;
+	background: #ddd;
+}
+
+#header{
+	background:;
+	padding:10px;
+	
+}
+
+#content-1{
+    position: ;
+    left:0;
+    right:0;
+    float:left;
+    width: 20%;
+    background-color: lightyellow
+    
+}
+
+#content-2-1{
+    width: 43%;
+    padding: 10px;
+    float:left;
+    background-color: #ddf;
+}
+#content-2-2{
+    background-color: #dff;
+    position: ;
+    right:0;
+    top:0;
+    padding: 10px;
+    float:right;
+    margin:auto;
+    width: 33%;
+}
+#tour{
+	clear:both;
+	
+}
+#footer {
+	clear:both;//pushes the footer down
+	padding:10px;
+    
+	color:black;
+}
+
+
