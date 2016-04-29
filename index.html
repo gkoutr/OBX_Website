@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head lang = "en">
+<head lang = "en"/>
 	<meta charset= "utf-8">
 	<meta name = "viewport" content = "width=device-width" />
     
@@ -31,12 +31,13 @@
 	
 	<link rel = "stylesheet" href = "Assignments/COSC 484 Assignment 3/css/mobile.css" media = "screen and (max-width:480px)" />
 	<link rel = "stylesheet" href = "Assignments/COSC 484 Assignment 3/css/style.css" />
-    <script type = "text/JavaScript" src = "Assignments/COSC 484 Assignment 3/javascript/checkform.js"/>
+    <script type = "text/JavaScript" src = "Assignments\COSC 484 Assignment 3\javascript\checkform.js"/>
     </script>
 </head>
 <body>
+
 <div id="body">
-<header>
+		<header>
 <div id = "header">
 <h1>Find Your Beach</h1>
 <h2>Outer Banks, North Carolina</h2>
@@ -70,26 +71,42 @@
 	<section id= "form">
 		<h3>Account Signup Form</h3>
 		<p>Sign up for an account and join our emailing list to receive information on events, rentals, new restaurants, and many more!</p>
-		<form method="get" action=" " id = "mainForm" onsubmit="return validate();">
+
+        <h3>SQL Tables</h3>
+        <form name= "selectAll" method = "post" action = "selectalltable.php">
+            <input type = "submit" value = "Display Table">
+        </form>
+        <form action="phptable.php" method="post">
+        Select by email: <select name="email">
+        <option value = "yahoo.com">Yahoo</option>
+        <option value = "gmail.com">Gmail</option>
+        <option value = "towson.edu">Towson</option>
+        </select>
+        <input type ="submit"/>
+        </form>
+
+		<form method="post" name = "Form" action=" " id = "mainForm" onsubmit="return validate();">
 			<fieldset>
 				<legend>Details</legend>
+				<em>*=Required</em>
 				<p>
-				  <label>Enter a Username: </label>
+
+				  <label>*Enter a Username: </label>
 				  <input type = "text" name = "username" id="username" class="required" />
 				</p>
 				<p>
-					<label>Enter a password: </label>
+					<label>*Enter a password: </label>
 					<input type = "password" name = "password" id = "password" class="required"/>
 				</p>
 				<p>
-					<label>Enter your email: </label>
+					<label>*Enter your email: </label>
 					<input type = "email" name = "email" id = "email" class="required" />
 				</p>	
 				<p>
-					<label>Date of Birth:</label>
+					<label>*Date of Birth:</label>
 					<input type = "datetime" name = "dob" id = "dob" class="required" />
 				</p>
-				<p><label>State currently living:</label>
+				<p><label>*State currently living:</label>
 					<select name = "where" id="where" />
 					<option>Choose a country</option>
 					<option>Alabama</option>
@@ -151,7 +168,7 @@
 					<input type = "tel" name = "phone" class="required"/>
 				</p>
 				<p> 
-				<label>Are you currently a resident in the Outer banks? </label>
+				<label>*Are you currently a resident in the Outer banks? </label>
 				<br>
 					<input type = "radio" name ="resident" id = "residentYes"value="yes">yes<br>
 					<input type = "radio" name = "resident" id="residentNo" value = "no">no<br>
@@ -169,8 +186,9 @@
 				  <textarea rows ="4" cols="50">
 				  </textarea>
 				</p>
-			<input type = "submit" class="rounded" />
+			<input type = "submit" class="rounded"  value="Submit"/>
 			<input type = "reset" />
+            
 					
 			</fieldset>
 	</div>
@@ -178,7 +196,7 @@
 	<div id = "content-2-2">
 	<section id = "Towns">
 		<h3>Towns</h3>
-		<p>The Outer Banks runs from north to south with many towns and beaches.</p>
+		<p> The Outer Banks runs from north to south with many towns and beaches.</p>
 		<p>Here are photos of some of the towns in order from north to south</p>
 		<div id = "Group1">
 			<h4 id ="duck">Duck</h4>
